@@ -1,0 +1,41 @@
+:root {
+	/**
+	 * These fonts are broken out into two separate variables from a previous iteration. I left
+	 * it in because it's nice to be able to split out the heading and body fonts.
+	 */
+	--accentFont: 'Atkinson Hyperlegible', Georgia, Times, serif;
+	--primaryFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Noto Sans CJK JP';
+	--codeFont: 'Fira Code', monospace;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		/* Colors For Light Theme */
+		--accent: #29a3ef;
+		--background: #faf9f8;
+		--primary: #a8dae5;
+		--secondary: #c2e1e7;
+		--tertiary: #eaf6f9;
+		--text: #121212;
+		--codeback: #e6e8e4;
+		--cborder: #c0c1bf;
+		--ink: var(--text);
+		--paper: var(--background);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* Colors For Dark Theme */
+		--accent: #e63946;
+		--background: #25282b;
+		--primary: #41454a;
+		--secondary: #41454a;
+		--tertiary: #212427;
+		--text: #e4e6eb;
+		--codeback: #41454a;
+		--cborder: #61656a;
+		--ink: var(--text);
+		--paper: var(--background);
+	}
+}
