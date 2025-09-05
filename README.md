@@ -1,5 +1,12 @@
 # About (dokaka-site-version-2024)
+This Dokaka's website theme had been used until summer of 2025.  
+You can re-use this blog oriented web theme for your site.  
 
+## Specialty
+- You can add music files into each blog posting
+- All media files are distributed via Cloudflare R2 object bucket
+- Completely static site. (You need to control cli commands in order to put media files on R2 bucket)
+- Basic template of each posting can be generated via VSCode snippets 
 - Directories and files required to backup locally && regularly.
     - `r2-bucket-local` (This dir should be sync manually all the time)
 
@@ -24,10 +31,6 @@
 5. `git checkout main`
 6. `git merge <Dev_Branch_Name>`
 7. at main branch : `pnpm wgup`
-
-## Git Repos
-- Here, set to private repository, not connected to the web hosting server.  
-- Used only for a code sharing between my own local machines, located at any home places.
 
 ## Web Hosting Server
 - Cloudflare pages (Project name : yourprjname)
